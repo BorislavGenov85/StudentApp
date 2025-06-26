@@ -9,7 +9,7 @@
     "pug": "^2.0.4"
   },
   "scripts": {
-    "test": "mocha tests/*.js",
+    "test": "mocha tests/*.js --reporter spec --no-colors",
     "start": "node index.js"
   }
 }
