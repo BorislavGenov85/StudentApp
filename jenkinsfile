@@ -8,12 +8,12 @@ pipeline {
             }
         }
 
-        stage ('Install dependencies') {
+        stage('Install dependencies') {
             bat 'npm ci'
         }
 
-        stage ('Run tests') {
-            bat 'npm test'
+        stage('Run tests') {
+            bat 'npm run test'
         }
     }
 
