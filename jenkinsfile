@@ -11,8 +11,6 @@ pipeline {
         stage('Install dependencies') {
             steps {
                 bat 'npm ci'
-            }
-            steps {
                 bat 'npm audit fix --force'
             }
         }
