@@ -12,6 +12,9 @@ pipeline {
             steps {
                 bat 'npm ci'
             }
+            steps {
+                bat 'npm audit fix --force'
+            }
         }
 
         stage('Run tests') {
